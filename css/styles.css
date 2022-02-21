@@ -77,12 +77,18 @@ body {
     display: flex;
 }
 
+.selected {
+    color: #ED1C24;
+    font-weight: bolder;
+}
+
 .menu__inicio {
     display: none;
 }
 
-.menu__item:hover {
-    background: rgba(0,0,0,0.3);
+.header a:hover {
+    color: #ED1C24;
+    font-weight: bolder;
 }
 
 .menu__link{
@@ -210,6 +216,10 @@ body {
     justify-self: center;
 }
 
+.servicio:hover {
+    transform: scale(1.2);
+}
+
 /* ESPACIOS */
 
 .espacios {
@@ -225,11 +235,17 @@ body {
 
 }
 
+.card__espacio:hover {
+    transform: scale(1.1);
+}
+
 .espacio__img {
     height: 290px;
     width: 400px;
     border-radius: 25px;
 }
+
+
 
 .espacio__info {
     width: 400px;
@@ -305,7 +321,15 @@ h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     border: 0;
+    margin-right: 20px;
+    text-align: center;
 }
+
+.btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
 
 .btn--yellow {
     background-color: #FFD400;
@@ -394,7 +418,11 @@ h1 {
 
     #btn-menu:checked ~ .menu {
         margin: 0px;
+        
     }
+
+    
+    
 
     .logo--hide {
         height: 100%;
@@ -515,6 +543,8 @@ h1 {
         display: flex;
         width: 4500px;
     }
+
+   
 
     .espacio__img {
         width: 200px;
