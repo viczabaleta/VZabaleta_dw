@@ -1,0 +1,571 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*-----------------------------------------------------*/
+
+
+
+/* HEADER */
+
+.header {
+    width: 100%;
+    background-color: #FFD400;
+    height: 50px;
+}
+
+#btn-menu {
+    display: none;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.nav__logo {
+    height: 20px;
+
+}
+
+.menu_items {
+    list-style: none;
+    text-decoration: none;
+  
+}
+
+.menu__inicio--logo {
+    margin-left: 20px;
+}
+
+.options {
+    display: none;
+    width: 30px;
+    height:30px;
+    padding: 10px;
+    
+}
+
+.sidemenu__icon {
+    height: 30px;
+    margin: 0%;
+}
+
+
+.options:hover {
+    cursor: pointer;
+}
+
+.menu__items {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.menu__inicio {
+    display: none;
+}
+
+.menu__item:hover {
+    background: rgba(0,0,0,0.3);
+}
+
+.menu__link{
+    display: block;
+    padding: 15px 20px;
+    color: black;
+    text-decoration: none;
+}
+
+.logo--hide {
+    display: none;
+}
+
+.logo--hide img{
+    height: 20px;
+}
+
+
+/*--------------------------------------------------*/
+
+/* MAIN */
+
+.main__img {
+    width: 100%;
+    height: auto;
+}
+
+.main__info {
+    padding: 20px;
+    background-color: #FFD400;
+    padding-bottom: 50px;
+}
+
+.main__info article {
+    margin-top: 15px;
+    line-height: 25px;
+}
+
+.empresas {
+    margin-top: 20px;    
+}
+
+.empresas h2 {
+    margin-left:30px;
+}
+
+.empresa {
+    display: flex;
+    justify-content: center;
+}
+
+.empresa img {
+    height: 60px;
+    width: auto;
+}
+
+.grid--empresas {
+    margin: 30px;
+
+    display: grid;  
+                    /* 6 columnas */
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
+                       /* 1 filas */
+    grid-template-rows: 80px; 
+}
+
+/* SUCURSALES */
+
+.sedes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 500px;
+    align-items: center;
+    
+}
+
+.card__sede {
+    background-color: #FFD400;
+    height: 430px;
+    width: 335px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-self: center;
+}
+
+.card__img {
+    width: 315px;
+    height: 315px;
+    border-radius: 25px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.info {
+    margin-left: 15px;
+}
+
+
+.sede__info {
+    list-style: none;
+    text-decoration: none;
+}
+
+.sede__info li {
+    padding-top: 5px;
+}
+
+/* SERVICIOS */
+
+.servicios--grid {
+    margin-top: 30px;
+    margin-bottom: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px;
+}
+
+.servicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+}
+
+/* ESPACIOS */
+
+.espacios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 400px);
+
+
+}
+
+.card__espacio {
+    justify-self: center;
+
+}
+
+.espacio__img {
+    height: 290px;
+    width: 400px;
+    border-radius: 25px;
+}
+
+.espacio__info {
+    width: 400px;
+}
+
+
+
+/* FORM CONTACTO */
+
+h1 {
+    margin: 30px;
+}
+
+.forms {
+    margin:30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 400px;
+}
+
+
+
+.form__grupo1 .form{
+    padding-bottom: 20px;
+}
+
+
+.input {
+    outline: none;
+    border: solid 1px #ccc;
+    padding: 5px;
+    font-family: 'Montserrat', sans-serif;
+    width: 470px;
+    border-radius: 5px;
+    display: block
+}
+
+.input__title {
+    font-weight: 600;
+}
+
+.form__select {
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 6px;
+}
+
+.form__check, .form__radio {
+    display: inline-block;
+}
+
+.form__select--opt {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.form__check {
+    padding-left: 40px;
+}
+
+.input--textarea {
+    height: 250px;
+    border-radius: 15px;
+}
+
+.btns {
+    margin-top: 30px;
+}
+
+.btn {
+    height: 40px;
+    width: 65px;
+    border-radius: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    border: 0;
+}
+
+.btn--yellow {
+    background-color: #FFD400;
+
+}
+
+ 
+
+
+/*--------------------------------------------------*/
+
+/* FOOTER */
+
+.footer {
+    background-color: #ffd500a0;
+    width: 100%; 
+}
+
+.footer .grupo1 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr;
+    grid-template-rows: 200px;
+    padding: 45px 0px;
+}
+
+
+.box {
+    width: 100%;
+    height: 100%;    
+}
+
+.box--p  {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+
+.box--logo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__logocirc {
+    height: 180px;
+    width: auto;   
+}
+
+.footer__socialmedia {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer__socialmedia a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    margin-right: 10px;
+}
+
+.footer .grupo2 {
+    padding: 15px 10px;
+    text-align: center;
+    background-color: #c5c5c5;
+    line-height: 20px;
+}
+
+/*--------------------------------------------------*/
+
+
+
+/* MEDIA QUERY */
+
+@media (max-width: 768px) {
+
+
+    #btn-menu:checked ~ .menu {
+        margin: 0px;
+    }
+
+    .logo--hide {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: baseline;
+        justify-content: space-around;
+    }   
+    
+   
+    .options {
+        display: block; 
+        padding-right: 35px;   
+    }
+
+    .menu {
+        position: absolute;
+        background: #ffd500d0;
+        width: auto;
+        margin-left: -150px;
+        transition: all 0.5s;
+    }
+
+    .menu__items {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 20px;
+    }
+    
+    .menu__item, .menu__inicio {
+        border-bottom: 3px solid #FFD400;
+        width: auto;      
+    }
+
+    
+
+    .menu__inicio--logo {
+        display: none;
+    }
+
+    .menu__inicio {
+        display: block;
+    }
+
+    /*------------------------------------------------------------------------------------------------*/
+
+    /* MAIN */
+
+    .grid--empresas {
+        display: grid;  
+                        /* 3 columnas */
+        grid-template-columns: 1fr 1fr 1fr; 
+                           /* 2 filas */
+        grid-template-rows: 80px 80px;
+     }
+
+     /* MAIN CONTACTO */
+     .forms {
+        margin:30px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 400px;
+    }
+
+    .input {
+        width: 320px;
+    }
+
+  
+
+    .input--textarea {
+        width: 320px;
+    }
+
+    .form__grupo2 {
+        margin-top: 150px;
+    }
+
+    /* MAIN SUCURSALES */
+
+    .sedes {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 500px 500PX 500PX;
+        align-items: center;
+        
+    }
+
+    /*MAIN SERVICIOS*/ 
+    
+    .servicios--grid {
+        margin-top: 30px;
+        margin-bottom: 70px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 150px);
+    }
+
+    .servicio img {
+        height: 80px;
+        width: auto;
+    }
+
+    .servicio h4 {
+        font-size: smaller;
+    }
+
+    /* ESPACIOS */
+
+    .espacios {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(7, 200px);
+        margin-bottom: 40px;
+    }
+
+    .card__espacio {
+        display: flex;
+        width: 4500px;
+    }
+
+    .espacio__img {
+        width: 200px;
+        height: 150px;
+
+    }
+
+    .espacio__info {
+        width: 200px;
+        margin-left: 20px;
+    }
+
+
+
+
+
+
+
+     /*------------------------------------------------------------------------------------------------*/
+
+    /* FOOTER */
+
+    .footer .grupo1 {
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 35px;
+    }
+
+    .box {
+        padding: 20px;
+    }
+
+    .box--p  {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer .grupo2 {
+        font-size: smaller;
+    }
+
+   
+
+
+
+    /*------------------------------------------------------------------------------------------------*/
+
+    
+
+}
+
+
+  
